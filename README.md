@@ -18,42 +18,38 @@
 5. Added customized configurations
 
 
-## Setting up ESLint and Prettier for Code Consistency
+# Setting up ESLint and Prettier for Code Consistency
     1. # ESLint and TypeScript dependencies
-npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+## npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
-## Prettier and ESLint Prettier Plugin
-npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+# Prettier and ESLint Prettier Plugin
+## npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
 
-## Airbnb style guide
-npx install-peerdeps --dev eslint-config-airbnb-base
+# Airbnb style guide
+## npx install-peerdeps --dev eslint-config-airbnb-base
 
 ### Project Structure
-📦 your-automation-framework
- ┣ 📂 environments
- ┃ ┣ 📜 local.env
- ┃ ┣ 📜 dev.env
- ┃ ┗ 📜 qa.env
- ┣ 📂 node_modules
- ┣ 📂 src
- ┃ ┣ 📂 ui
- ┃ ┃ ┣ 📂 tests
- ┃ ┃ ┃ ┣ 📜 test1.spec.ts
- ┃ ┃ ┃ ┗ 📜 test2.spec.ts
- ┃ ┃ ┗ 📂 utils
- ┃ ┃   ┣ 📜 uiConstants.ts
- ┃ ┣ 📂 e2e
- ┃ ┃ ┣ 📂 pages
- ┃ ┃ ┣ 📂 tests
- ┃ ┃ ┗ 📂 utils
- ┣ 📜 .eslintrc.js
- ┣ 📜 .prettierrc.js
- ┣ 📜 .gitignore
- ┣ 📜 tsconfig.json
- ┣ 📜 playwright.config.ts
- ┣ 📜 package.json
- ┣ 📜 package-lock.json
- ┗ 📜 README.md
+- 📦 your-automation-framework
+- ┣ 📂 environments
+- ┃ ┣ 📜 local.env
+- ┃ ┣ 📜 dev.env
+- ┃ ┗ 📜 qa.env
+- ┣ 📂 node_modules
+- ┣ 📂 src
+- ┃ ┣ 📂 ui
+- ┃ ┃ ┣ 📂 tests
+- ┃ ┃ ┃ ┣ 📜 test1.spec.ts
+- ┃ ┃ ┃ ┗ 📜 test2.spec.ts
+- ┃ ┃ ┗ 📂 utils
+- ┃ ┃   ┣ 📜 uiConstants.ts
+- ┣ 📜 .eslintrc.js
+- ┣ 📜 .prettierrc.js
+- ┣ 📜 .gitignore
+- ┣ 📜 tsconfig.json
+- ┣ 📜 playwright.config.ts
+- ┣ 📜 package.json
+- ┣ 📜 package-lock.json
+- ┗ 📜 README.md
 
  ## Steps to follow for running the tests
  1. Clone the repo into your local system
@@ -61,4 +57,8 @@ npx install-peerdeps --dev eslint-config-airbnb-base
  3. Run the command 'npm install'
  4. Run the command for installing Prettier and ESLint Prettier Plugin
  5. Set a new NODE_ENV environment variable on your local machine(refer https://www.twilio.com/en-us/blog/how-to-set-environment-variables-html)
- 6. run 'npx playwright test' to run the tests with local.env
+ 6. Make the Environment value changes with your login credentials
+    - TEST_USERNAME = YOUR_PHONE/EMAIL
+    - TEST_PASSWORD = YOUR_PASSWORD
+ 7. Configure the browser based on your requirement from playwright.config.ts file
+ 8. run 'npx playwright test' to run the tests with local.env
