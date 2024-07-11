@@ -1,7 +1,7 @@
-###### Robust Automation framework with the help of Playwright and typescript
+## Robust Automation framework with the help of Playwright and typescript
 ###########################################################################
 
-# As a Software Development Engineer in Test (SDET), the decisions we make when constructing an automation framework extend beyond mere technical preferences—they critically affect the effectiveness and quality of our testing. Each choice, from selecting tools to implementing testing practices, has the potential to leave a lasting impact on our testing efforts. Grasping the reasoning behind these decisions is essential for developing sustainable, long-term solutions.
+##### As a Software Development Engineer in Test (SDET), the decisions we make when constructing an automation framework extend beyond mere technical preferences—they critically affect the effectiveness and quality of our testing. Each choice, from selecting tools to implementing testing practices, has the potential to leave a lasting impact on our testing efforts. Grasping the reasoning behind these decisions is essential for developing sustainable, long-term solutions.
 
 # Tools used
 1. Playwright
